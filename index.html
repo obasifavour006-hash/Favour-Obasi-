@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Favour Obasi | AI Video Creator</title>
+<meta name="description" content="AI product ads, UGC style videos and cinematic trailers by Favour Obasi, an AI Video Creator based in Port Harcourt, Nigeria.">
+<meta name="theme-color" content="#30213F">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to my work</a>
+<header class="nav" id="nav">
+  <a class="brand" href="#home">Favour Obasi</a>
+  <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#work">Portfolio</a><a href="#services">Services</a><a href="#process">Process</a>
+    <a class="btn small" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="label">AI Video Creator · AI Product Ads · AI UGC Videos</p>
+    <h1>Turning ideas into videos people want to watch.</h1>
+    <p class="lead">I create realistic AI product ads, UGC style videos and cinematic brand content that help businesses present their products and ideas in a more engaging way.</p>
+    <div class="cta"><a class="btn" href="#work">Explore My Videos</a><a class="btn ghost" href="#contact">Let's Work Together</a></div>
+  </div>
+  <div class="stage" id="stage" aria-hidden="true"><canvas id="gl"></canvas><div class="stage-fallback" id="fallback"></div></div>
+</section>
+
+<section class="about" id="about">
+  <figure class="portrait"><img src="images/favour.jpg" alt="Portrait of Favour Obasi, smiling, against a lavender background" width="900" height="842" loading="lazy"></figure>
+  <div>
+    <h2>Creative ideas. Cinematic visuals. Videos made to capture attention.</h2>
+    <p>I'm Favour, an AI Video Creator in Port Harcourt. I take a product, a story or a marketing message and turn it into a video that looks considered, not generated.</p>
+    <p>My work started with story. At Morpholis Reads I turn manuscripts into book trailers and scenes, keeping characters, tone and detail faithful to the page. The same discipline carries into product ads and creator style videos: a clear idea, directed shots, then careful editing.</p>
+    <ul class="chips"><li>Book trailers</li><li>Product ads</li><li>UGC style videos</li><li>Character consistency</li><li>Editing and finishing</li></ul>
+    <p class="small">B.A. Communication, University of Port Harcourt.</p>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="work-head"><h2>Selected video work</h2><p>Hover a video to preview it. Tap on a phone to open it. Everything here is my own work.</p></div>
+  <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+  <div class="reel" id="reel"></div>
+  <div class="stills"><h3>Stills from my scene development</h3><div id="stills"></div></div>
+</section>
+
+<section class="services" id="services">
+  <h2>What I make</h2>
+  <ol>
+    <li><h3>AI product ads</h3><p>Short ads that present a product in a polished scene, with directed lighting, motion and a clear closing shot.</p></li>
+    <li><h3>UGC style videos</h3><p>Presenter led, creator style clips and explainers, made to feel natural in a social feed.</p></li>
+    <li><h3>Book trailers and story scenes</h3><p>Cinematic trailers that bring characters and key moments to life with consistent visuals, music and voiceover.</p></li>
+    <li><h3>Brand promo videos</h3><p>A brand message turned into a short, watchable video in the format your platform needs.</p></li>
+    <li><h3>Concept, editing and assembly</h3><p>Shaping an idea into a storyboard, then combining generated clips, text, music and transitions into one finished video.</p></li>
+  </ol>
+</section>
+
+<section class="process" id="process">
+  <h2>How a project moves</h2>
+  <ol class="steps">
+    <li><span>01</span><h3>Understand</h3><p>The product, brand, audience, message and purpose.</p></li>
+    <li><span>02</span><h3>Develop the concept</h3><p>A visual direction, storyboard or plan that fits the project.</p></li>
+    <li><span>03</span><h3>Generate and direct</h3><p>Directed prompts and AI tools build the scenes, characters and movement.</p></li>
+    <li><span>04</span><h3>Edit and refine</h3><p>Timing, transitions, consistency, sound and finishing.</p></li>
+    <li><span>05</span><h3>Deliver</h3><p>The finished video in the agreed format and aspect ratio.</p></li>
+  </ol>
+  <p class="small note">The path adapts to each project.</p>
+</section>
+
+<section class="tools" id="tools">
+  <h2>Tools I work with</h2>
+  <p class="lead dim">AI tools generate the material. Direction, iteration, editing and quality checks make it a finished video.</p>
+  <dl id="toolList"></dl>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Have an idea for your next video?</h2>
+  <p class="lead">Let's turn your product, brand or creative idea into a video worth watching.</p>
+  <div class="cta"><a class="btn" id="mailBtn" href="mailto:obasifavour006@gmail.com?subject=Video%20project%20enquiry">Let's Create Something</a><a class="btn ghost light" href="#work">View My Work</a></div>
+  <p class="small">obasifavour006@gmail.com · +234 707 193 2365 · Port Harcourt, Nigeria</p>
+</section>
+</main>
+
+<footer><span>Favour Obasi · AI Video Creator</span><span>© <span id="yr"></span></span></footer>
+
+<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-labelledby="vTitle" hidden>
+  <div class="v-box">
+    <button class="v-close" id="vClose" aria-label="Close video">✕</button>
+    <video id="vVideo" controls playsinline preload="none"></video>
+    <div class="v-info"><h3 id="vTitle"></h3><p id="vDesc"></p><a class="btn small" id="vCta" href="#">Ask about a similar video</a></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
